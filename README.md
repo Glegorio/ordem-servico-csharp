@@ -30,7 +30,7 @@
 
 | Componente | Versão | Motivo da escolha |
 |---|---|---|
-| .NET Framework | 4.6.2 | _A preencher_ |
+| .NET Framework | 4.6   | _A preencher_ |
 | Visual Studio | 2026 | _A preencher_ |
 | PostgreSQL | 14+ | _A preencher_ |
 | Npgsql | 4.0.x | Compatível com .NET Framework 4.6.2 |
