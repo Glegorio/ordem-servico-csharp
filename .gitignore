@@ -1,0 +1,80 @@
+# ============================================================
+# .gitignore para projeto .NET Framework no Visual Studio
+# ============================================================
+# Baseado no template oficial do GitHub para Visual Studio,
+# adaptado para esse teste prático.
+
+# --- Pastas do Visual Studio ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# --- Pastas de build ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# --- Resultados de teste ---
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# --- NuGet ---
+# Pasta de pacotes restaurados (não vai pro Git, é restaurada via NuGet)
+packages/
+# Mantém o arquivo de configuração que define os pacotes
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# --- Arquivos do ReportViewer (gerados ao usar o designer) ---
+*.rdlc.bak
+
+# --- Arquivos temporários do Windows / sistema ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Arquivos de IDE alternativas (caso você abra em outra) ---
+.idea/
+*.swp
+.DS_Store
+
+# --- Arquivos de log gerados em runtime pela aplicação ---
+# (a aplicação grava em logs/ — não queremos commitar esses)
+logs/
+*.log
+
+# --- Arquivos de configuração local (com senhas, strings de conexão) ---
+# IMPORTANTE: o App.config base vai pro Git (com placeholders).
+# Mas se você criar um App.local.config com a senha real, ele fica fora.
+*.local.config
+appsettings.Development.json
+appsettings.Local.json
+
+# --- Outros arquivos do .NET ---
+*.pidb
+*.svclog
+*.scc
+*.pfx
+*.publishsettings
+node_modules/
+
+# --- Arquivos do Resharper (se algum dia usar) ---
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user

@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="OrdemServico.Entities/OrdemServico.Entities.csproj" Id="04d03173-b1b2-4070-8cb5-43a916753819" />
+  <Project Path="OrdemServico.Infra/OrdemServico.Infra.csproj" Id="7eb77e72-6680-47e9-9821-440a76d2f3c1" />
+  <Project Path="OrdemServico.Reports/OrdemServico.Reports.csproj" Id="744a6350-3c6d-4b23-b57a-9b89eba5aeee" />
+  <Project Path="OrdemServico.Repositories/OrdemServico.Repositories.csproj" Id="16bd9f4f-4a1b-4b95-8110-e817d6d6a4d7" />
+  <Project Path="OrdemServico.Services/OrdemServico.Services.csproj" Id="df8ff552-0a36-4c0f-b00f-24eccbffe7d7" />
+  <Project Path="OrdemServico.UI/OrdemServico.UI.csproj" Id="360f89ec-4b6c-41df-9410-bc31a485f700" />
+</Solution>
