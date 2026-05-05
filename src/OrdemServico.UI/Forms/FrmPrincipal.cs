@@ -9,6 +9,8 @@ namespace OrdemServico.UI.Forms
 {
     public partial class FrmPrincipal : Form
     {
+        private MdiClient _mdiClient;
+
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -16,13 +18,11 @@ namespace OrdemServico.UI.Forms
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            // Preenche status bar
             lblUsuario.Text = "Usuário: " + (SessionContext.UsuarioAtual ?? "-");
 
             var connStr = ConfigurationManager.ConnectionStrings["PostgreSql"];
             if (connStr != null)
             {
-                // Extrai apenas o nome do banco da connection string para nao expor senha
                 var partes = connStr.ConnectionString.Split(';');
                 foreach (var p in partes)
                 {
@@ -34,23 +34,39 @@ namespace OrdemServico.UI.Forms
                 }
             }
 
+            ConfigurarMdiClient();
             AtualizarRelogio();
-            CentralizarLogo();
             Logger.Info("FrmPrincipal aberto", "FrmPrincipal.Load");
         }
 
-        protected override void OnResize(EventArgs e)
+        private void ConfigurarMdiClient()
         {
-            base.OnResize(e);
-            CentralizarLogo();
+            foreach (Control c in this.Controls)
+            {
+                if (c is MdiClient)
+                {
+                    _mdiClient = (MdiClient)c;
+                    _mdiClient.BackColor = Color.FromArgb(0, 122, 140);
+                    _mdiClient.Paint += MdiClient_Paint;
+                    _mdiClient.Resize += (s, ev) => _mdiClient.Invalidate();
+                    this.MdiChildActivate += (s, ev) => _mdiClient.Invalidate();
+                    break;
+                }
+            }
         }
 
-        private void CentralizarLogo()
+        private void MdiClient_Paint(object sender, PaintEventArgs e)
         {
-            if (lblLogo != null && pnlFundo != null)
+            if (MdiChildren.Length > 0) return;
+
+            const string texto = "Sistema OS";
+            using (var font = new Font("Segoe UI", 48F, FontStyle.Bold))
+            using (var brush = new SolidBrush(Color.White))
             {
-                lblLogo.Left = (pnlFundo.Width - lblLogo.Width) / 2;
-                lblLogo.Top = (pnlFundo.Height - lblLogo.Height) / 2;
+                var size = e.Graphics.MeasureString(texto, font);
+                var x = (_mdiClient.ClientSize.Width - size.Width) / 2;
+                var y = (_mdiClient.ClientSize.Height - size.Height) / 2;
+                e.Graphics.DrawString(texto, font, brush, x, y);
             }
         }
 
@@ -64,15 +80,9 @@ namespace OrdemServico.UI.Forms
             lblDataHora.Text = DateTime.Now.ToString("dddd, dd/MM/yyyy HH:mm:ss");
         }
 
-        // -----------------------------------------------------------------
-        // EVENTOS DOS MENUS — placeholders por enquanto
-        // Cada um vai abrir o Form correspondente quando criarmos.
-        // -----------------------------------------------------------------
-
         private void miClientes_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("FrmClientesLista — proxima etapa.",
-                "Em construção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AbrirMdiChild<FrmClientesLista>();
         }
 
         private void miServicos_Click(object sender, EventArgs e)
@@ -110,6 +120,24 @@ namespace OrdemServico.UI.Forms
                 SessionContext.Limpar();
                 Application.Exit();
             }
+        }
+
+        private void AbrirMdiChild<T>() where T : Form, new()
+        {
+            foreach (var f in MdiChildren)
+            {
+                if (f is T)
+                {
+                    f.BringToFront();
+                    f.Focus();
+                    return;
+                }
+            }
+
+            var novo = new T();
+            novo.MdiParent = this;
+            novo.Show();
+            novo.WindowState = FormWindowState.Maximized;
         }
     }
 }

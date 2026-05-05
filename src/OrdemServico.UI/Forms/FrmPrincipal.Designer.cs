@@ -45,12 +45,9 @@
             this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblBanco = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDataHora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pnlFundo = new System.Windows.Forms.Panel();
-            this.lblLogo = new System.Windows.Forms.Label();
             this.timerRelogio = new System.Windows.Forms.Timer(this.components);
             this.tsPrincipal.SuspendLayout();
             this.ssRodape.SuspendLayout();
-            this.pnlFundo.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsPrincipal
@@ -88,14 +85,14 @@
             // miClientes
             // 
             this.miClientes.Name = "miClientes";
-            this.miClientes.Size = new System.Drawing.Size(224, 26);
+            this.miClientes.Size = new System.Drawing.Size(146, 26);
             this.miClientes.Text = "Clientes";
             this.miClientes.Click += new System.EventHandler(this.miClientes_Click);
             // 
             // miServicos
             // 
             this.miServicos.Name = "miServicos";
-            this.miServicos.Size = new System.Drawing.Size(224, 26);
+            this.miServicos.Size = new System.Drawing.Size(146, 26);
             this.miServicos.Text = "Serviços";
             this.miServicos.Click += new System.EventHandler(this.miServicos_Click);
             // 
@@ -164,7 +161,7 @@
             // miSair
             // 
             this.miSair.Name = "miSair";
-            this.miSair.Size = new System.Drawing.Size(224, 26);
+            this.miSair.Size = new System.Drawing.Size(195, 26);
             this.miSair.Text = "Sair do Sistema";
             this.miSair.Click += new System.EventHandler(this.miSair_Click);
             // 
@@ -192,7 +189,7 @@
             // lblBanco
             // 
             this.lblBanco.Name = "lblBanco";
-            this.lblBanco.Size = new System.Drawing.Size(640, 24);
+            this.lblBanco.Size = new System.Drawing.Size(601, 24);
             this.lblBanco.Spring = true;
             this.lblBanco.Text = "Banco: -";
             this.lblBanco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,28 +199,6 @@
             this.lblDataHora.Name = "lblDataHora";
             this.lblDataHora.Size = new System.Drawing.Size(69, 24);
             this.lblDataHora.Text = "--/--/----";
-            // 
-            // pnlFundo
-            // 
-            this.pnlFundo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(140)))));
-            this.pnlFundo.Controls.Add(this.lblLogo);
-            this.pnlFundo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFundo.Location = new System.Drawing.Point(0, 0);
-            this.pnlFundo.Name = "pnlFundo";
-            this.pnlFundo.Size = new System.Drawing.Size(800, 450);
-            this.pnlFundo.TabIndex = 3;
-            // 
-            // lblLogo
-            // 
-            this.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(110, 184);
-            this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(466, 106);
-            this.lblLogo.TabIndex = 0;
-            this.lblLogo.Text = "Sistema OS";
             // 
             // timerRelogio
             // 
@@ -238,7 +213,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ssRodape);
             this.Controls.Add(this.tsPrincipal);
-            this.Controls.Add(this.pnlFundo);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.Name = "FrmPrincipal";
@@ -250,8 +224,6 @@
             this.tsPrincipal.PerformLayout();
             this.ssRodape.ResumeLayout(false);
             this.ssRodape.PerformLayout();
-            this.pnlFundo.ResumeLayout(false);
-            this.pnlFundo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,8 +246,6 @@
         private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
         private System.Windows.Forms.ToolStripStatusLabel lblBanco;
         private System.Windows.Forms.ToolStripStatusLabel lblDataHora;
-        private System.Windows.Forms.Panel pnlFundo;
-        private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Timer timerRelogio;
     }
 }
