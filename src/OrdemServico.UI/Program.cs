@@ -1,22 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using OrdemServico.Infra.Logging;
+using OrdemServico.UI.Forms;
 
 namespace OrdemServico.UI
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
-        /// </summary>
+        [DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
+
         [STAThread]
         static void Main()
         {
+            // Força DPI awareness antes de qualquer renderizacao
+            if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ///Application.Run(new Form1());
+
+            // ... resto do código permanece igual
+            try
+            {
+                using (var login = new FrmLogin())
+                {
+                    if (login.ShowDialog() != DialogResult.OK)
+                        return;
+                }
+
+                MessageBox.Show("Login OK! Proxima etapa: criar FrmPrincipal.",
+                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error("Erro fatal na aplicacao", ex, "Program.Main");
+                MessageBox.Show("Erro fatal: " + ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
