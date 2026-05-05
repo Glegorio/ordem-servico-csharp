@@ -14,14 +14,12 @@ namespace OrdemServico.UI
         [STAThread]
         static void Main()
         {
-            // Força DPI awareness antes de qualquer renderizacao
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // ... resto do código permanece igual
             try
             {
                 using (var login = new FrmLogin())
@@ -30,8 +28,7 @@ namespace OrdemServico.UI
                         return;
                 }
 
-                MessageBox.Show("Login OK! Proxima etapa: criar FrmPrincipal.",
-                    "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Run(new FrmPrincipal());
             }
             catch (Exception ex)
             {
