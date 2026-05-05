@@ -41,6 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegistroAuditoria.cs" />
+    <Compile Include="HistoricoStatus.cs" />
+    <Compile Include="ItemOrdemServico.cs" />
+    <Compile Include="OrdemServico.cs" />
+    <Compile Include="Servico.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Enums\StatusOS.cs" />
+    <Compile Include="Enums\TipoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
