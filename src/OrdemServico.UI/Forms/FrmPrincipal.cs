@@ -92,14 +92,15 @@ namespace OrdemServico.UI.Forms
 
         private void miOrdensListar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("FrmOrdensLista — proxima etapa.",
-                "Em construção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AbrirMdiChild<FrmOrdensLista>();
         }
 
         private void miOrdemNova_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("FrmOrdemEdit (modo novo) — proxima etapa.",
-                "Em construção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            using (var form = new FrmOrdemEdit())
+            {
+                form.ShowDialog(this);
+            }
         }
 
         private void miRelatorioOS_Click(object sender, EventArgs e)
