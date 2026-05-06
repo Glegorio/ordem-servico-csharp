@@ -87,39 +87,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Left>4.23333cm</Left>
+            <Top>0.15325cm</Top>
+            <Left>4.21171cm</Left>
             <Height>0.6cm</Height>
             <Width>7.2625cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>="Período: " &amp; Parameters!PeriodoTexto.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.6827cm</Top>
-            <Left>5.2832cm</Left>
-            <Height>0.6cm</Height>
-            <Width>5cm</Width>
-            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -155,6 +126,48 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox87">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="Período: " &amp; Parameters!PeriodoTexto.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox87</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>5</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox17">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -166,16 +179,17 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox17</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -197,16 +211,17 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox19</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -228,16 +243,17 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox25</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -259,7 +275,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                             <Paragraph>
                               <TextRuns>
@@ -274,10 +292,9 @@
                           <rd:DefaultName>Textbox21</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -299,16 +316,17 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox23</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Silver</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -341,7 +359,6 @@
                           <rd:DefaultName>OrdemId</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -373,7 +390,6 @@
                           <rd:DefaultName>DataAbertura</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -403,7 +419,6 @@
                           <rd:DefaultName>Status</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -435,7 +450,6 @@
                           <rd:DefaultName>ValorTotal</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -467,7 +481,6 @@
                           <rd:DefaultName>ValorImposto</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -502,7 +515,6 @@
                           <rd:DefaultName>Textbox92</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>WhiteSmoke</BackgroundColor>
@@ -538,7 +550,6 @@
                           <rd:DefaultName>Textbox95</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>WhiteSmoke</BackgroundColor>
@@ -571,7 +582,6 @@
                           <rd:DefaultName>Textbox96</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>WhiteSmoke</BackgroundColor>
@@ -608,7 +618,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -630,27 +640,25 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox108">
+                        <Textbox Name="Textbox107">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>Total</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox108</rd:DefaultName>
+                          <rd:DefaultName>Textbox107</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -684,7 +692,6 @@
                           <rd:DefaultName>Textbox111</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>WhiteSmoke</BackgroundColor>
@@ -708,7 +715,7 @@
                                   <Value>=Sum(Fields!ValorImposto.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
-                                    <Format>"R$ "#,##0.00</Format>
+                                    <Format>"% "#.#0.0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -718,7 +725,6 @@
                           <rd:DefaultName>Textbox112</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>WhiteSmoke</BackgroundColor>
@@ -749,6 +755,41 @@
                   <TablixHeader>
                     <Size>3.38899cm</Size>
                     <CellContents>
+                      <Textbox Name="Textbox86">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox86</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>None</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>3.38899cm</Size>
+                    <CellContents>
                       <Textbox Name="Textbox41">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
@@ -760,7 +801,9 @@
                                 <Style />
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                           <Paragraph>
                             <TextRuns>
@@ -769,7 +812,9 @@
                                 <Style />
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                           <Paragraph>
                             <TextRuns>
@@ -784,10 +829,9 @@
                         <rd:DefaultName>Textbox41</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>Silver</BackgroundColor>
+                          <BackgroundColor>LightGrey</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -832,7 +876,6 @@
                         <rd:DefaultName>ClienteNome</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
                           <PaddingLeft>2pt</PaddingLeft>
@@ -859,25 +902,24 @@
                   <TablixHeader>
                     <Size>3.38899cm</Size>
                     <CellContents>
-                      <Textbox Name="Textbox107">
+                      <Textbox Name="Textbox93">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Total</Value>
+                                <Value />
                                 <Style />
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox107</rd:DefaultName>
+                        <rd:DefaultName>Textbox93</rd:DefaultName>
                         <Style>
                           <Border>
-                            <Color>LightGrey</Color>
-                            <Style>Solid</Style>
+                            <Style>None</Style>
                           </Border>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
@@ -895,11 +937,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsOrdens</DataSetName>
-            <Top>1.38853cm</Top>
-            <Left>0.83353cm</Left>
-            <Height>3cm</Height>
+            <Top>0.78853cm</Top>
+            <Left>0.82272cm</Left>
+            <Height>3.6cm</Height>
             <Width>15.88899cm</Width>
-            <ZIndex>2</ZIndex>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -913,8 +955,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="Total de OS no período: " &amp; CountRows("dsOrdens")</Value>
+                    <Value>="Total de OS: " &amp; CountRows("dsOrdens")</Value>
                     <Style>
+                      <FontFamily>Times New Roman</FontFamily>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -923,9 +966,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox113</rd:DefaultName>
+            <Top>0.18853cm</Top>
+            <Left>13.38247cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.51177cm</Width>
-            <ZIndex>3</ZIndex>
+            <Width>3.32924cm</Width>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>

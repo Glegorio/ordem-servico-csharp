@@ -33,6 +33,8 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -48,7 +50,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(30, 65);
+            this.lblUsuario.Location = new System.Drawing.Point(30, 151);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(57, 16);
             this.lblUsuario.TabIndex = 2;
@@ -56,7 +58,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(30, 85);
+            this.txtUsuario.Location = new System.Drawing.Point(30, 166);
             this.txtUsuario.MaxLength = 100;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(330, 22);
@@ -67,7 +69,7 @@
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(190, 130);
+            this.btnEntrar.Location = new System.Drawing.Point(190, 244);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(80, 30);
             this.btnEntrar.TabIndex = 4;
@@ -80,7 +82,7 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Maroon;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(280, 130);
+            this.btnCancelar.Location = new System.Drawing.Point(280, 244);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(80, 30);
             this.btnCancelar.TabIndex = 5;
@@ -88,13 +90,34 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(116, 350);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Sistema Os - V1 - 2026";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.label2.Location = new System.Drawing.Point(116, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 31);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "BEM VINDO!";
+            // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(382, 173);
+            this.ClientSize = new System.Drawing.Size(382, 375);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtUsuario);
@@ -118,5 +141,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

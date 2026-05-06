@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.pnlCabecalho = new System.Windows.Forms.Panel();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblNumeroOS = new System.Windows.Forms.Label();
-            this.lblStats = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblVerf = new System.Windows.Forms.Label();
-            this.lblVersao = new System.Windows.Forms.Label();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.cmbCliente = new System.Windows.Forms.ComboBox();
-            this.lblData = new System.Windows.Forms.Label();
-            this.lblDataAbertura = new System.Windows.Forms.Label();
-            this.lblConclusao = new System.Windows.Forms.Label();
-            this.lblDataConclusao = new System.Windows.Forms.Label();
-            this.lblObservacao = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
+            this.lblObservacao = new System.Windows.Forms.Label();
+            this.lblDataConclusao = new System.Windows.Forms.Label();
+            this.lblConclusao = new System.Windows.Forms.Label();
+            this.lblDataAbertura = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.lblVersao = new System.Windows.Forms.Label();
+            this.lblVerf = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblStats = new System.Windows.Forms.Label();
+            this.lblNumeroOS = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
             this.gbAdicionarItem = new System.Windows.Forms.GroupBox();
-            this.lblServico = new System.Windows.Forms.Label();
-            this.cmbServico = new System.Windows.Forms.ComboBox();
-            this.lblQuantidade = new System.Windows.Forms.Label();
-            this.numQuantidade = new System.Windows.Forms.NumericUpDown();
             this.btnAdicionarItem = new System.Windows.Forms.Button();
+            this.numQuantidade = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantidade = new System.Windows.Forms.Label();
+            this.cmbServico = new System.Windows.Forms.ComboBox();
+            this.lblServico = new System.Windows.Forms.Label();
             this.pnlAcoes = new System.Windows.Forms.Panel();
-            this.lblValorT = new System.Windows.Forms.Label();
-            this.lblValorTotal = new System.Windows.Forms.Label();
-            this.btnRemoverItem = new System.Windows.Forms.Button();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.btnConcluir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnConcluir = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnRemoverItem = new System.Windows.Forms.Button();
+            this.lblValorTotal = new System.Windows.Forms.Label();
+            this.lblValorT = new System.Windows.Forms.Label();
             this.dgvItens = new System.Windows.Forms.DataGridView();
             this.pnlCabecalho.SuspendLayout();
             this.gbAdicionarItem.SuspendLayout();
@@ -88,33 +88,92 @@
             this.pnlCabecalho.Size = new System.Drawing.Size(982, 147);
             this.pnlCabecalho.TabIndex = 0;
             // 
-            // lblNumero
+            // txtObservacao
             // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(10, 10);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(49, 20);
-            this.lblNumero.TabIndex = 0;
-            this.lblNumero.Text = "OS n°:";
+            this.txtObservacao.Location = new System.Drawing.Point(10, 116);
+            this.txtObservacao.MaxLength = 500;
+            this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.Size = new System.Drawing.Size(970, 27);
+            this.txtObservacao.TabIndex = 13;
             // 
-            // lblNumeroOS
+            // lblObservacao
             // 
-            this.lblNumeroOS.AutoSize = true;
-            this.lblNumeroOS.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroOS.Location = new System.Drawing.Point(60, 8);
-            this.lblNumeroOS.Name = "lblNumeroOS";
-            this.lblNumeroOS.Size = new System.Drawing.Size(68, 25);
-            this.lblNumeroOS.TabIndex = 1;
-            this.lblNumeroOS.Text = "(nova)";
+            this.lblObservacao.AutoSize = true;
+            this.lblObservacao.Location = new System.Drawing.Point(10, 95);
+            this.lblObservacao.Name = "lblObservacao";
+            this.lblObservacao.Size = new System.Drawing.Size(90, 20);
+            this.lblObservacao.TabIndex = 12;
+            this.lblObservacao.Text = "Observação:";
             // 
-            // lblStats
+            // lblDataConclusao
             // 
-            this.lblStats.AutoSize = true;
-            this.lblStats.Location = new System.Drawing.Point(200, 10);
-            this.lblStats.Name = "lblStats";
-            this.lblStats.Size = new System.Drawing.Size(52, 20);
-            this.lblStats.TabIndex = 2;
-            this.lblStats.Text = "Status:";
+            this.lblDataConclusao.Location = new System.Drawing.Point(630, 65);
+            this.lblDataConclusao.Name = "lblDataConclusao";
+            this.lblDataConclusao.Size = new System.Drawing.Size(200, 23);
+            this.lblDataConclusao.TabIndex = 11;
+            this.lblDataConclusao.Text = "-";
+            // 
+            // lblConclusao
+            // 
+            this.lblConclusao.AutoSize = true;
+            this.lblConclusao.Location = new System.Drawing.Point(630, 45);
+            this.lblConclusao.Name = "lblConclusao";
+            this.lblConclusao.Size = new System.Drawing.Size(80, 20);
+            this.lblConclusao.TabIndex = 10;
+            this.lblConclusao.Text = "Conclusão:";
+            // 
+            // lblDataAbertura
+            // 
+            this.lblDataAbertura.Location = new System.Drawing.Point(420, 65);
+            this.lblDataAbertura.Name = "lblDataAbertura";
+            this.lblDataAbertura.Size = new System.Drawing.Size(200, 23);
+            this.lblDataAbertura.TabIndex = 9;
+            this.lblDataAbertura.Text = "-";
+            // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(420, 45);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(70, 20);
+            this.lblData.TabIndex = 8;
+            this.lblData.Text = "Abertura:";
+            // 
+            // cmbCliente
+            // 
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(10, 65);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(400, 28);
+            this.cmbCliente.TabIndex = 7;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(10, 45);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(58, 20);
+            this.lblCliente.TabIndex = 6;
+            this.lblCliente.Text = "Cliente:";
+            // 
+            // lblVersao
+            // 
+            this.lblVersao.AutoSize = true;
+            this.lblVersao.Location = new System.Drawing.Point(510, 10);
+            this.lblVersao.Name = "lblVersao";
+            this.lblVersao.Size = new System.Drawing.Size(15, 20);
+            this.lblVersao.TabIndex = 5;
+            this.lblVersao.Text = "-";
+            // 
+            // lblVerf
+            // 
+            this.lblVerf.AutoSize = true;
+            this.lblVerf.Location = new System.Drawing.Point(450, 10);
+            this.lblVerf.Name = "lblVerf";
+            this.lblVerf.Size = new System.Drawing.Size(56, 20);
+            this.lblVerf.TabIndex = 4;
+            this.lblVerf.Text = "Versão:";
             // 
             // lblStatus
             // 
@@ -127,92 +186,33 @@
             this.lblStatus.TabIndex = 3;
             this.lblStatus.Text = "-";
             // 
-            // lblVerf
+            // lblStats
             // 
-            this.lblVerf.AutoSize = true;
-            this.lblVerf.Location = new System.Drawing.Point(450, 10);
-            this.lblVerf.Name = "lblVerf";
-            this.lblVerf.Size = new System.Drawing.Size(56, 20);
-            this.lblVerf.TabIndex = 4;
-            this.lblVerf.Text = "Versão:";
+            this.lblStats.AutoSize = true;
+            this.lblStats.Location = new System.Drawing.Point(200, 10);
+            this.lblStats.Name = "lblStats";
+            this.lblStats.Size = new System.Drawing.Size(52, 20);
+            this.lblStats.TabIndex = 2;
+            this.lblStats.Text = "Status:";
             // 
-            // lblVersao
+            // lblNumeroOS
             // 
-            this.lblVersao.AutoSize = true;
-            this.lblVersao.Location = new System.Drawing.Point(510, 10);
-            this.lblVersao.Name = "lblVersao";
-            this.lblVersao.Size = new System.Drawing.Size(15, 20);
-            this.lblVersao.TabIndex = 5;
-            this.lblVersao.Text = "-";
+            this.lblNumeroOS.AutoSize = true;
+            this.lblNumeroOS.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroOS.Location = new System.Drawing.Point(60, 8);
+            this.lblNumeroOS.Name = "lblNumeroOS";
+            this.lblNumeroOS.Size = new System.Drawing.Size(68, 25);
+            this.lblNumeroOS.TabIndex = 1;
+            this.lblNumeroOS.Text = "(nova)";
             // 
-            // lblCliente
+            // lblNumero
             // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(10, 45);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(58, 20);
-            this.lblCliente.TabIndex = 6;
-            this.lblCliente.Text = "Cliente:";
-            // 
-            // cmbCliente
-            // 
-            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(10, 65);
-            this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(400, 28);
-            this.cmbCliente.TabIndex = 7;
-            // 
-            // lblData
-            // 
-            this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(420, 45);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(70, 20);
-            this.lblData.TabIndex = 8;
-            this.lblData.Text = "Abertura:";
-            // 
-            // lblDataAbertura
-            // 
-            this.lblDataAbertura.Location = new System.Drawing.Point(420, 65);
-            this.lblDataAbertura.Name = "lblDataAbertura";
-            this.lblDataAbertura.Size = new System.Drawing.Size(200, 23);
-            this.lblDataAbertura.TabIndex = 9;
-            this.lblDataAbertura.Text = "-";
-            // 
-            // lblConclusao
-            // 
-            this.lblConclusao.AutoSize = true;
-            this.lblConclusao.Location = new System.Drawing.Point(630, 45);
-            this.lblConclusao.Name = "lblConclusao";
-            this.lblConclusao.Size = new System.Drawing.Size(80, 20);
-            this.lblConclusao.TabIndex = 10;
-            this.lblConclusao.Text = "Conclusão:";
-            // 
-            // lblDataConclusao
-            // 
-            this.lblDataConclusao.Location = new System.Drawing.Point(630, 65);
-            this.lblDataConclusao.Name = "lblDataConclusao";
-            this.lblDataConclusao.Size = new System.Drawing.Size(200, 23);
-            this.lblDataConclusao.TabIndex = 11;
-            this.lblDataConclusao.Text = "-";
-            // 
-            // lblObservacao
-            // 
-            this.lblObservacao.AutoSize = true;
-            this.lblObservacao.Location = new System.Drawing.Point(10, 95);
-            this.lblObservacao.Name = "lblObservacao";
-            this.lblObservacao.Size = new System.Drawing.Size(90, 20);
-            this.lblObservacao.TabIndex = 12;
-            this.lblObservacao.Text = "Observação:";
-            // 
-            // txtObservacao
-            // 
-            this.txtObservacao.Location = new System.Drawing.Point(10, 116);
-            this.txtObservacao.MaxLength = 500;
-            this.txtObservacao.Name = "txtObservacao";
-            this.txtObservacao.Size = new System.Drawing.Size(970, 27);
-            this.txtObservacao.TabIndex = 13;
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Location = new System.Drawing.Point(10, 10);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(49, 20);
+            this.lblNumero.TabIndex = 0;
+            this.lblNumero.Text = "OS n°:";
             // 
             // gbAdicionarItem
             // 
@@ -229,32 +229,17 @@
             this.gbAdicionarItem.TabStop = false;
             this.gbAdicionarItem.Text = "Adicionar Item";
             // 
-            // lblServico
+            // btnAdicionarItem
             // 
-            this.lblServico.AutoSize = true;
-            this.lblServico.Location = new System.Drawing.Point(10, 25);
-            this.lblServico.Name = "lblServico";
-            this.lblServico.Size = new System.Drawing.Size(60, 20);
-            this.lblServico.TabIndex = 0;
-            this.lblServico.Text = "Serviço:";
-            // 
-            // cmbServico
-            // 
-            this.cmbServico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbServico.FormattingEnabled = true;
-            this.cmbServico.Location = new System.Drawing.Point(10, 45);
-            this.cmbServico.Name = "cmbServico";
-            this.cmbServico.Size = new System.Drawing.Size(400, 28);
-            this.cmbServico.TabIndex = 1;
-            // 
-            // lblQuantidade
-            // 
-            this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Location = new System.Drawing.Point(420, 25);
-            this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(90, 20);
-            this.lblQuantidade.TabIndex = 2;
-            this.lblQuantidade.Text = "Quantidade:";
+            this.btnAdicionarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnAdicionarItem.ForeColor = System.Drawing.Color.White;
+            this.btnAdicionarItem.Location = new System.Drawing.Point(540, 44);
+            this.btnAdicionarItem.Name = "btnAdicionarItem";
+            this.btnAdicionarItem.Size = new System.Drawing.Size(120, 28);
+            this.btnAdicionarItem.TabIndex = 4;
+            this.btnAdicionarItem.Text = "+ Adicionar";
+            this.btnAdicionarItem.UseVisualStyleBackColor = false;
+            this.btnAdicionarItem.Click += new System.EventHandler(this.btnAdicionarItem_Click);
             // 
             // numQuantidade
             // 
@@ -274,17 +259,32 @@
             0,
             0});
             // 
-            // btnAdicionarItem
+            // lblQuantidade
             // 
-            this.btnAdicionarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.btnAdicionarItem.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionarItem.Location = new System.Drawing.Point(540, 44);
-            this.btnAdicionarItem.Name = "btnAdicionarItem";
-            this.btnAdicionarItem.Size = new System.Drawing.Size(120, 28);
-            this.btnAdicionarItem.TabIndex = 4;
-            this.btnAdicionarItem.Text = "+ Adicionar";
-            this.btnAdicionarItem.UseVisualStyleBackColor = false;
-            this.btnAdicionarItem.Click += new System.EventHandler(this.btnAdicionarItem_Click);
+            this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.Location = new System.Drawing.Point(420, 25);
+            this.lblQuantidade.Name = "lblQuantidade";
+            this.lblQuantidade.Size = new System.Drawing.Size(90, 20);
+            this.lblQuantidade.TabIndex = 2;
+            this.lblQuantidade.Text = "Quantidade:";
+            // 
+            // cmbServico
+            // 
+            this.cmbServico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServico.FormattingEnabled = true;
+            this.cmbServico.Location = new System.Drawing.Point(10, 45);
+            this.cmbServico.Name = "cmbServico";
+            this.cmbServico.Size = new System.Drawing.Size(400, 28);
+            this.cmbServico.TabIndex = 1;
+            // 
+            // lblServico
+            // 
+            this.lblServico.AutoSize = true;
+            this.lblServico.Location = new System.Drawing.Point(10, 25);
+            this.lblServico.Name = "lblServico";
+            this.lblServico.Size = new System.Drawing.Size(60, 20);
+            this.lblServico.TabIndex = 0;
+            this.lblServico.Text = "Serviço:";
             // 
             // pnlAcoes
             // 
@@ -302,61 +302,18 @@
             this.pnlAcoes.Size = new System.Drawing.Size(982, 60);
             this.pnlAcoes.TabIndex = 2;
             // 
-            // lblValorT
+            // btnFechar
             // 
-            this.lblValorT.AutoSize = true;
-            this.lblValorT.Location = new System.Drawing.Point(10, 18);
-            this.lblValorT.Name = "lblValorT";
-            this.lblValorT.Size = new System.Drawing.Size(83, 20);
-            this.lblValorT.TabIndex = 0;
-            this.lblValorT.Text = "Valor Total:";
-            // 
-            // lblValorTotal
-            // 
-            this.lblValorTotal.AutoSize = true;
-            this.lblValorTotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblValorTotal.Location = new System.Drawing.Point(100, 12);
-            this.lblValorTotal.Name = "lblValorTotal";
-            this.lblValorTotal.Size = new System.Drawing.Size(93, 31);
-            this.lblValorTotal.TabIndex = 1;
-            this.lblValorTotal.Text = "R$ 0,00";
-            // 
-            // btnRemoverItem
-            // 
-            this.btnRemoverItem.BackColor = System.Drawing.Color.Maroon;
-            this.btnRemoverItem.ForeColor = System.Drawing.Color.White;
-            this.btnRemoverItem.Location = new System.Drawing.Point(300, 14);
-            this.btnRemoverItem.Name = "btnRemoverItem";
-            this.btnRemoverItem.Size = new System.Drawing.Size(120, 32);
-            this.btnRemoverItem.TabIndex = 2;
-            this.btnRemoverItem.Text = "Remover Item";
-            this.btnRemoverItem.UseVisualStyleBackColor = false;
-            this.btnRemoverItem.Click += new System.EventHandler(this.btnRemoverItem_Click);
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.BackColor = System.Drawing.Color.Silver;
-            this.btnIniciar.ForeColor = System.Drawing.Color.White;
-            this.btnIniciar.Location = new System.Drawing.Point(500, 14);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(90, 32);
-            this.btnIniciar.TabIndex = 3;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = false;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
-            // 
-            // btnConcluir
-            // 
-            this.btnConcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.btnConcluir.ForeColor = System.Drawing.Color.White;
-            this.btnConcluir.Location = new System.Drawing.Point(600, 14);
-            this.btnConcluir.Name = "btnConcluir";
-            this.btnConcluir.Size = new System.Drawing.Size(90, 32);
-            this.btnConcluir.TabIndex = 4;
-            this.btnConcluir.Text = "Concluir";
-            this.btnConcluir.UseVisualStyleBackColor = false;
-            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnFechar.ForeColor = System.Drawing.Color.White;
+            this.btnFechar.Location = new System.Drawing.Point(880, 14);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(90, 32);
+            this.btnFechar.TabIndex = 6;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnCancelar
             // 
@@ -370,18 +327,61 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnFechar
+            // btnConcluir
             // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(880, 14);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(90, 32);
-            this.btnFechar.TabIndex = 6;
-            this.btnFechar.Text = "Fechar";
-            this.btnFechar.UseVisualStyleBackColor = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            this.btnConcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnConcluir.ForeColor = System.Drawing.Color.White;
+            this.btnConcluir.Location = new System.Drawing.Point(600, 14);
+            this.btnConcluir.Name = "btnConcluir";
+            this.btnConcluir.Size = new System.Drawing.Size(90, 32);
+            this.btnConcluir.TabIndex = 4;
+            this.btnConcluir.Text = "Concluir";
+            this.btnConcluir.UseVisualStyleBackColor = false;
+            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.BackColor = System.Drawing.Color.Gold;
+            this.btnIniciar.ForeColor = System.Drawing.Color.White;
+            this.btnIniciar.Location = new System.Drawing.Point(500, 14);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(90, 32);
+            this.btnIniciar.TabIndex = 3;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // btnRemoverItem
+            // 
+            this.btnRemoverItem.BackColor = System.Drawing.Color.Maroon;
+            this.btnRemoverItem.ForeColor = System.Drawing.Color.White;
+            this.btnRemoverItem.Location = new System.Drawing.Point(300, 14);
+            this.btnRemoverItem.Name = "btnRemoverItem";
+            this.btnRemoverItem.Size = new System.Drawing.Size(120, 32);
+            this.btnRemoverItem.TabIndex = 2;
+            this.btnRemoverItem.Text = "Remover Item";
+            this.btnRemoverItem.UseVisualStyleBackColor = false;
+            this.btnRemoverItem.Click += new System.EventHandler(this.btnRemoverItem_Click);
+            // 
+            // lblValorTotal
+            // 
+            this.lblValorTotal.AutoSize = true;
+            this.lblValorTotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblValorTotal.Location = new System.Drawing.Point(100, 12);
+            this.lblValorTotal.Name = "lblValorTotal";
+            this.lblValorTotal.Size = new System.Drawing.Size(93, 31);
+            this.lblValorTotal.TabIndex = 1;
+            this.lblValorTotal.Text = "R$ 0,00";
+            // 
+            // lblValorT
+            // 
+            this.lblValorT.AutoSize = true;
+            this.lblValorT.Location = new System.Drawing.Point(10, 18);
+            this.lblValorT.Name = "lblValorT";
+            this.lblValorT.Size = new System.Drawing.Size(83, 20);
+            this.lblValorT.TabIndex = 0;
+            this.lblValorT.Text = "Valor Total:";
             // 
             // dgvItens
             // 
