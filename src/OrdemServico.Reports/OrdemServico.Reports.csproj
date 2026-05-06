@@ -76,7 +76,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\OrdemServico.Reports.Dtos.RelatorioOrdemDto.datasource" />
+    <None Include="Properties\DataSources\OrdemServico.Reports.Filters.RelatorioFiltro.datasource" />
+    <None Include="Properties\DataSources\OrdemServico.Reports.Services.RelatorioService.datasource" />
+    <None Include="Properties\DataSources\RelatorioDataSet.datasource" />
+    <None Include="Properties\DataSources\RelatorioDataSet.OrdensReportDataTable.datasource" />
+    <None Include="Properties\DataSources\RelatorioDataSet.OrdensReportRow.datasource" />
+    <None Include="Properties\DataSources\RelatorioDataSet.OrdensReportRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\RelatorioDataSet.OrdensReportRowChangeEventHandler.datasource" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="RelatorioOrdens.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

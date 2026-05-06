@@ -105,8 +105,7 @@ namespace OrdemServico.UI.Forms
 
         private void miRelatorioOS_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("FrmRelatorio — proxima etapa.",
-                "Em construção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AbrirMdiChild<FrmRelatorio>();
         }
 
         private void miSair_Click(object sender, EventArgs e)
