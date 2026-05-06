@@ -87,8 +87,7 @@ namespace OrdemServico.UI.Forms
 
         private void miServicos_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("FrmServicosLista — proxima etapa.",
-                "Em construção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AbrirMdiChild<FrmServicosLista>();
         }
 
         private void miOrdensListar_Click(object sender, EventArgs e)
