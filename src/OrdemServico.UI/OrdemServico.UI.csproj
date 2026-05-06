@@ -130,6 +130,9 @@
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrdemEdit.resx">
+      <DependentUpon>FrmOrdemEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmOrdensLista.resx">
       <DependentUpon>FrmOrdensLista.cs</DependentUpon>
     </EmbeddedResource>
